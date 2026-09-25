@@ -1,0 +1,1156 @@
+{
+  "sourceLanguage": "en",
+  "version": "1.0",
+  "strings": {
+    "AirPods connected": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirPods bağlı"
+          }
+        }
+      }
+    },
+    "Waiting for AirPods": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirPods bekleniyor"
+          }
+        }
+      }
+    },
+    "Head tracking unavailable": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kafa takibi desteklenmiyor"
+          }
+        }
+      }
+    },
+    "Tracking off": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Takip kapalı"
+          }
+        }
+      }
+    },
+    "Put on your AirPods to start": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Başlamak için AirPods'unuzu takın"
+          }
+        }
+      }
+    },
+    "Upright": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dik"
+          }
+        }
+      }
+    },
+    "Today": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bugün"
+          }
+        }
+      }
+    },
+    "Neck load": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Boyun yükü"
+          }
+        }
+      }
+    },
+    "Tracked": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Takip"
+          }
+        }
+      }
+    },
+    "Nudges": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uyarı"
+          }
+        }
+      }
+    },
+    "forward tilt": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "öne eğim"
+          }
+        }
+      }
+    },
+    "Sit up straight and look ahead": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dik oturun ve karşıya bakın"
+          }
+        }
+      }
+    },
+    "Hold your head in a comfortable neutral position, then tap the button. Nape measures every tilt from here.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Başınızı rahat ve nötr bir konumda tutun, sonra düğmeye dokunun. Nape her eğimi buradan ölçer."
+          }
+        }
+      }
+    },
+    "Put on your AirPods first": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Önce AirPods'unuzu takın"
+          }
+        }
+      }
+    },
+    "Set as upright": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dik olarak ayarla"
+          }
+        }
+      }
+    },
+    "Threshold": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eşik"
+          }
+        }
+      }
+    },
+    "Tilt angle": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eğim açısı"
+          }
+        }
+      }
+    },
+    "After": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Şu kadar sonra"
+          }
+        }
+      }
+    },
+    "Repeat every": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tekrar aralığı"
+          }
+        }
+      }
+    },
+    "Haptic": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Titreşim"
+          }
+        }
+      }
+    },
+    "Sound in AirPods": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirPods'ta ses"
+          }
+        }
+      }
+    },
+    "Track in background": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arka planda takip et"
+          }
+        }
+      }
+    },
+    "Keeps a silent audio session open so iOS doesn't pause tracking when you switch apps. Uses a little more battery.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "iOS uygulama değiştirince takibi durdurmasın diye sessiz bir ses oturumu açık tutar. Biraz daha pil harcar."
+          }
+        }
+      }
+    },
+    "Settings": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ayarlar"
+          }
+        }
+      }
+    },
+    "Done": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bitti"
+          }
+        }
+      }
+    },
+    "Leaning for %llds": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld sn'dir eğik"
+          }
+        }
+      }
+    },
+    "Alert sound": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uyarı sesi"
+          }
+        }
+      }
+    },
+    "Chime": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Çan"
+          }
+        }
+      }
+    },
+    "Triple beep": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Üçlü bip"
+          }
+        }
+      }
+    },
+    "Alarm": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alarm"
+          }
+        }
+      }
+    },
+    "Siren": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siren"
+          }
+        }
+      }
+    },
+    "Rapid": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Seri bip"
+          }
+        }
+      }
+    },
+    "Tap a sound to preview it in your AirPods.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bir sese dokunun, AirPods'unuzda dinleyin."
+          }
+        }
+      }
+    },
+    "Connected": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bağlı"
+          }
+        }
+      }
+    },
+    "Not connected": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bağlı değil"
+          }
+        }
+      }
+    },
+    "Head tracking not supported": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kafa takibi desteklenmiyor"
+          }
+        }
+      }
+    },
+    "Welcome to Nape": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nape'e Hoş Geldiniz"
+          }
+        }
+      }
+    },
+    "Measure your tilt": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eğiminizi ölçün"
+          }
+        }
+      }
+    },
+    "Nape uses the motion sensors in your AirPods to see how far your head leans forward.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nape, AirPods'unuzdaki hareket sensörleriyle başınızın ne kadar öne eğildiğini ölçer."
+          }
+        }
+      }
+    },
+    "Get a nudge": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uyarı alın"
+          }
+        }
+      }
+    },
+    "Lean too long and Nape plays a sound in your AirPods so you lift your head.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uzun süre eğik kalırsanız Nape, başınızı kaldırmanız için AirPods'unuzda bir ses çalar."
+          }
+        }
+      }
+    },
+    "Head motion is processed on your iPhone. Nape never uploads it anywhere.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kafa hareketi iPhone'unuzda işlenir. Nape bunu hiçbir yere yüklemez."
+          }
+        }
+      }
+    },
+    "Continue": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Devam"
+          }
+        }
+      }
+    },
+    "Put on your AirPods": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirPods'unuzu takın"
+          }
+        }
+      }
+    },
+    "min": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "dk"
+          }
+        }
+      }
+    },
+    "About neck load": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Boyun yükü hakkında"
+          }
+        }
+      }
+    },
+    "Nape estimates how much your neck carries from the angle of your head. The further you look down, the heavier your head effectively becomes for the muscles and discs in your neck.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nape, başınızın açısından boynunuzun ne kadar yük taşıdığını tahmin eder. Aşağı baktıkça başınız, boyun kasları ve diskleri için etkin olarak ağırlaşır."
+          }
+        }
+      }
+    },
+    "Load by tilt angle": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eğim açısına göre yük"
+          }
+        }
+      }
+    },
+    "Source: Hansraj K.K., Surgical Technology International 25, 2014. Values between rows are interpolated.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kaynak: Hansraj K.K., Surgical Technology International 25, 2014. Satırlar arası değerler doğrusal hesaplanır."
+          }
+        }
+      }
+    },
+    "Limits": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sınırlar"
+          }
+        }
+      }
+    },
+    "How it's calculated": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nasıl hesaplanır"
+          }
+        }
+      }
+    },
+    "m is the mass of your head and neck, θ the forward tilt. cos θ is the part of the head's weight pressing straight down the spine; 4.9 × sin θ is the pull of the neck muscles that keep the head from falling forward, since their leverage is about five times shorter than the head's. Tuned to match the Hansraj (2014) cervical spine model within 1.5 kg.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "m baş ve boynunuzun kütlesi, θ öne eğim. cos θ, kafa ağırlığının omurgaya dik binen kısmı; 4,9 × sin θ ise kafayı öne düşmekten alıkoyan ense kaslarının çekişi, çünkü kasların kaldıraç kolu kafanınkinden yaklaşık beş kat kısadır. Hansraj (2014) servikal omurga modeline 1,5 kg içinde uyacak şekilde ayarlandı."
+          }
+        }
+      }
+    },
+    "Head and neck mass %@ kg, 8.1% of your body weight (Dempster, 1955).": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Baş ve boyun kütlesi %@ kg, vücut ağırlığınızın %%8,1'i (Dempster, 1955)."
+          }
+        }
+      }
+    },
+    "Using an average head and neck mass of 5.4 kg. Enter your body weight in Settings to personalize.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ortalama 5,4 kg baş ve boyun kütlesi kullanılıyor. Kişiselleştirmek için Ayarlar'dan vücut ağırlığınızı girin."
+          }
+        }
+      }
+    },
+    "This is a static lever model, not a measurement of your body. No clinical study links a specific kg·min figure to pain or injury. Treat the number as a trend to lower over time, not as a medical measurement.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bu statik bir kaldıraç modelidir, vücudunuzun ölçümü değildir. Belirli bir kg·dk değerini ağrı veya sakatlıkla ilişkilendiren klinik çalışma yoktur. Sayıyı tıbbi bir ölçüm değil, zamanla düşürülecek bir eğilim olarak görün."
+          }
+        }
+      }
+    },
+    "Personalize with body weight": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vücut ağırlığıyla kişiselleştir"
+          }
+        }
+      }
+    },
+    "Body weight": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vücut ağırlığı"
+          }
+        }
+      }
+    },
+    "Head and neck weigh about 8% of body weight. Without it Nape assumes 5.4 kg.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Baş ve boyun, vücut ağırlığının yaklaşık %8'idir. Girilmezse Nape 5,4 kg varsayar."
+          }
+        }
+      }
+    },
+    "Pause tracking": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Takibi duraklat"
+          }
+        }
+      }
+    },
+    "Resume tracking": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Takibi sürdür"
+          }
+        }
+      }
+    },
+    "Set upright pose": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dik duruşu ayarla"
+          }
+        }
+      }
+    },
+    "Gentle": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nazik"
+          }
+        }
+      }
+    },
+    "Firm": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sert"
+          }
+        }
+      }
+    },
+    "Relentless": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acımasız"
+          }
+        }
+      }
+    },
+    "Custom": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Özel"
+          }
+        }
+      }
+    },
+    "Intensity": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Şiddet"
+          }
+        }
+      }
+    },
+    "Nudge after 60 s, repeat every 2 min, no escalation.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "60 sn sonra uyarır, 2 dakikada bir tekrarlar, kademe yok."
+          }
+        }
+      }
+    },
+    "Nudge after 30 s, repeat every minute, escalating.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "30 sn sonra uyarır, her dakika tekrarlar, kademeli."
+          }
+        }
+      }
+    },
+    "Nudge after 15 s, repeat every 30 s, escalating.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "15 sn sonra uyarır, 30 sn'de bir tekrarlar, kademeli."
+          }
+        }
+      }
+    },
+    "Custom timing below.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Süreler aşağıda özel olarak ayarlı."
+          }
+        }
+      }
+    },
+    "Escalate on repeat": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tekrarda sertleş"
+          }
+        }
+      }
+    },
+    "With escalation, each repeat within the same slouch plays the sound one more time and taps harder. Lifting your head resets it.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kademe açıkken aynı eğik kalış içindeki her tekrar sesi bir kez daha çalar ve daha sert titreşir. Başınızı kaldırınca sıfırlanır."
+          }
+        }
+      }
+    },
+    "Works in the background": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arka planda çalışır"
+          }
+        }
+      }
+    },
+    "Switch apps or lock your phone; Nape keeps watching. Just don't swipe it away.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uygulama değiştirin ya da telefonu kilitleyin, Nape izlemeye devam eder. Yeter ki yukarı kaydırıp kapatmayın."
+          }
+        }
+      }
+    },
+    "Live in the Dynamic Island": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dynamic Island'da canlı"
+          }
+        }
+      }
+    },
+    "Your current tilt sits at the top of the screen and on the Lock Screen while tracking.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Takip sürerken anlık eğiminiz ekranın üstünde ve Kilit Ekranı'nda durur."
+          }
+        }
+      }
+    },
+    "No AirPods": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirPods yok"
+          }
+        }
+      }
+    },
+    "%llds": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld sn"
+          }
+        }
+      }
+    },
+    "7 days": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "7 gün"
+          }
+        }
+      }
+    },
+    "Above this angle Nape counts you as leaning. At %lld° your neck carries about %lld kg.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bu açının üstünde Nape sizi eğik sayar. %lld°'de boynunuz yaklaşık %lld kg taşır."
+          }
+        }
+      }
+    },
+    "%lld s": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld sn"
+          }
+        }
+      }
+    },
+    "Lift your head": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Başınızı kaldırın"
+          }
+        }
+      }
+    },
+    "You've been leaning at %lld° for a while.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bir süredir %lld° eğik duruyorsunuz."
+          }
+        }
+      }
+    },
+    "Nudge as notification": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uyarıyı bildirim olarak gönder"
+          }
+        }
+      }
+    },
+    "Apple Watch": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Watch"
+          }
+        }
+      }
+    },
+    "When your iPhone is locked, the nudge shows on your Apple Watch with a tap on the wrist. Open the Nape app on the watch and start a session for instant taps while you use your iPhone.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "iPhone kilitliyken uyarı Apple Watch'ta bilek titreşimiyle görünür. iPhone'u kullanırken anında titreşim için saatte Nape'i açıp oturum başlatın."
+          }
+        }
+      }
+    },
+    "Session": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oturum"
+          }
+        }
+      }
+    },
+    "End session": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oturumu bitir"
+          }
+        }
+      }
+    },
+    "Start session": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oturum başlat"
+          }
+        }
+      }
+    },
+    "Waiting for iPhone": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "iPhone bekleniyor"
+          }
+        }
+      }
+    },
+    "Open Nape on iPhone": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "iPhone'da Nape'i açın"
+          }
+        }
+      }
+    },
+    "Tracking paused": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Takip duraklatıldı"
+          }
+        }
+      }
+    },
+    "today": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "bugün"
+          }
+        }
+      }
+    },
+    "Session keeps the watch awake for up to an hour so nudges reach your wrist instantly.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oturum, saati bir saate kadar uyanık tutar; uyarılar bileğinize anında ulaşır."
+          }
+        }
+      }
+    },
+    "Neck": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Boyun"
+          }
+        }
+      }
+    },
+    "Time leaning": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eğik süre"
+          }
+        }
+      }
+    },
+    "Avg. load": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ort. yük"
+          }
+        }
+      }
+    },
+    "kg": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "kg"
+          }
+        }
+      }
+    },
+    "min leaning": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "dk eğik"
+          }
+        }
+      }
+    },
+    "%lld min": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld dk"
+          }
+        }
+      }
+    },
+    "%lld h %lld min": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld sa %lld dk"
+          }
+        }
+      }
+    },
+    "≈ %lld kg on your neck": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "≈ boynunuzda %lld kg"
+          }
+        }
+      }
+    },
+    "Average load": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ortalama yük"
+          }
+        }
+      }
+    },
+    "While you are past your threshold, Nape averages the estimated load over that time. \"Avg. load 17 kg\" means that during the minutes you spent leaning today, your neck carried about 17 kg on average, roughly three times its upright load.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eşiğinizi aştığınız sürede Nape tahmini yükün ortalamasını alır. \"Ort. yük 17 kg\", bugün eğik geçirdiğiniz dakikalarda boynunuzun ortalama 17 kg taşıdığı anlamına gelir; bu, dik duruştaki yükün yaklaşık üç katıdır."
+          }
+        }
+      }
+    },
+    "%lld min leaning · %lld kg": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld dk eğik · %lld kg"
+          }
+        }
+      }
+    },
+    "%lld min leaning today · %lld kg now": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bugün %lld dk eğik · şimdi %lld kg"
+          }
+        }
+      }
+    },
+    "%lld min leaning today": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bugün %lld dk eğik"
+          }
+        }
+      }
+    },
+    "%lld kg": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld kg"
+          }
+        }
+      }
+    },
+    "%lldm": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld dk"
+          }
+        }
+      }
+    },
+    "Leaning": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eğik"
+          }
+        }
+      }
+    },
+    "%lld° · %lld min leaning": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld° · %lld dk eğik"
+          }
+        }
+      }
+    },
+    "%lld min · avg %lld kg": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld dk · ort. %lld kg"
+          }
+        }
+      }
+    },
+    "See your day": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gününüzü görün"
+          }
+        }
+      }
+    },
+    "How long you leaned today, and the average weight your neck carried while you did.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bugün ne kadar eğik kaldığınız ve o sırada boynunuzun taşıdığı ortalama ağırlık."
+          }
+        }
+      }
+    },
+    "Next, Nape asks to send notifications so nudges reach your Apple Watch while your iPhone is locked.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sırada bildirim izni var: iPhone kilitliyken uyarıların Apple Watch'unuza ulaşması için."
+          }
+        }
+      }
+    }
+  }
+}
