@@ -15,15 +15,27 @@ settings:
     MARKETING_VERSION: 0.1.0
     CURRENT_PROJECT_VERSION: 1
     IPHONEOS_DEPLOYMENT_TARGET: "17.0"
+schemes:
+  Nape:
+    build:
+      targets:
+        Nape: all
+    run:
+      config: Debug
+      storeKitConfiguration: Nape/Nape.storekit
+    archive:
+      config: Release
 targets:
   Nape:
     type: application
     platform: iOS
     sources:
       - path: Nape
-        excludes: ["Info.plist", "*.entitlements"]
+        excludes: ["Info.plist", "*.entitlements", "*.storekit"]
     entitlements:
       path: Nape/Nape.entitlements
+      properties:
+        com.apple.developer.usernotifications.time-sensitive: true
     info:
       path: Nape/Info.plist
       properties:
@@ -88,6 +100,8 @@ targets:
         embed: true
     entitlements:
       path: NapeWatch/NapeWatch.entitlements
+      properties:
+        com.apple.security.application-groups: [group.com.batuhanhaymana.nape]
     info:
       path: NapeWatch/Info.plist
       properties:
@@ -95,6 +109,7 @@ targets:
         CFBundleShortVersionString: $(MARKETING_VERSION)
         CFBundleVersion: $(CURRENT_PROJECT_VERSION)
         WKApplication: true
+        CFBundleIconName: AppIcon
         WKCompanionAppBundleIdentifier: com.batuhanhaymana.nape
         WKRunsIndependentlyOfCompanionApp: false
         UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait, UIInterfaceOrientationPortraitUpsideDown]
@@ -105,7 +120,7 @@ targets:
         CODE_SIGN_STYLE: Automatic
         TARGETED_DEVICE_FAMILY: "4"
         SKIP_INSTALL: YES
-        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
   NapeWatchWidget:
     type: app-extension
     platform: watchOS
@@ -117,6 +132,8 @@ targets:
       - path: Nape/Resources/Localizable.xcstrings
     entitlements:
       path: NapeWatchWidget/NapeWatchWidget.entitlements
+      properties:
+        com.apple.security.application-groups: [group.com.batuhanhaymana.nape]
     info:
       path: NapeWatchWidget/Info.plist
       properties:

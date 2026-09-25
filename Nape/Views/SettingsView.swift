@@ -3,6 +3,8 @@ import SwiftUI
 struct SettingsView: View {
     @EnvironmentObject private var settings: AppSettings
     @EnvironmentObject private var engine: PostureEngine
+    @EnvironmentObject private var store: ProStore
+    @State private var showPaywall = false
     @Environment(\.dismiss) private var dismiss
     @State private var showInfo = false
 
@@ -27,6 +29,22 @@ struct SettingsView: View {
     var body: some View {
         NavigationStack {
             Form {
+                if !store.isPro {
+                    Section {
+                        Button { showPaywall = true } label: {
+                            HStack {
+                                VStack(alignment: .leading, spacing: 2) {
+                                    Text("Nape Pro").font(.headline).foregroundStyle(.primary)
+                                    Text(store.isTrialActive ? "Trial: \(store.trialDaysLeft) days left" : "Trial ended")
+                                        .font(.footnote).foregroundStyle(.secondary)
+                                }
+                                Spacer()
+                                Text(store.product?.displayPrice ?? "").foregroundStyle(.secondary)
+                                Image(systemName: "chevron.right").font(.caption).foregroundStyle(.tertiary)
+                            }
+                        }
+                    }
+                }
                 if !simPage2 {
                 Section("Threshold") {
                     LabeledContent("Tilt angle", value: "\(Int(settings.thresholdDegrees))°")
@@ -44,6 +62,7 @@ struct SettingsView: View {
                         if settings.intensity == .custom { Text(String(localized: NudgeIntensity.custom.title)).tag(NudgeIntensity.custom) }
                     }
                     .pickerStyle(.segmented)
+                    .disabled(!store.isUnlocked)
                     Text(intensityHint)
                         .font(.footnote).foregroundStyle(.secondary)
                 } header: {
@@ -77,11 +96,13 @@ struct SettingsView: View {
                 } footer: {
                     Text("Tap a sound to preview it in your AirPods.")
                 }
-                .disabled(!settings.soundEnabled)
+                .disabled(!settings.soundEnabled || !store.isUnlocked)
                 Section {
+                    if !store.isUnlocked { Button("Unlock with Nape Pro") { showPaywall = true } }
                     Toggle("Personalize with body weight", isOn: Binding(
                         get: { settings.bodyWeightKg > 0 },
                         set: { settings.bodyWeightKg = $0 ? 70 : 0 }))
+                    .disabled(!store.isUnlocked)
                     if settings.bodyWeightKg > 0 {
                         LabeledContent("Body weight", value: "\(Int(settings.bodyWeightKg)) kg")
                         Slider(value: $settings.bodyWeightKg, in: 40...150, step: 1)
@@ -109,6 +130,7 @@ struct SettingsView: View {
             }
             .navigationTitle("Settings")
             .sheet(isPresented: $showInfo) { MetricInfoView() }
+            .sheet(isPresented: $showPaywall) { PaywallView() }
             .toolbar { ToolbarItem(placement: .confirmationAction) { Button("Done") { dismiss() } } }
         }
     }

@@ -6,6 +6,7 @@ struct NapeApp: App {
     @StateObject private var motion: HeadMotionService
     @StateObject private var engine: PostureEngine
     @StateObject private var settings: AppSettings
+    @StateObject private var store = ProStore()
 
     init() {
         let motion = HeadMotionService()
@@ -21,6 +22,7 @@ struct NapeApp: App {
                 .environmentObject(motion)
                 .environmentObject(engine)
                 .environmentObject(settings)
+                .environmentObject(store)
         }
     }
 }

@@ -15,6 +15,10 @@ final class PostureEngine: ObservableObject {
     @Published private(set) var tiltDegrees: Double = 0
     @Published private(set) var today: DailyStats
     @Published private(set) var isTracking = false
+    /// Ücretsiz katman günlük sınırına ulaştı (deneme bitmiş, Pro yok).
+    @Published private(set) var dailyLimitReached = false
+    /// Dışarıdan verilir: Pro/deneme açık mı. Kapalıysa günlük takip sınırı uygulanır.
+    var isUnlocked: () -> Bool = { true }
 
     private let motion: HeadMotionService
     private let settings: AppSettings
@@ -77,6 +81,8 @@ final class PostureEngine: ObservableObject {
 
     func startTracking() {
         guard !isTracking else { return }
+        if !isUnlocked() && today.trackedSeconds >= ProStore.freeDailyTrackingSeconds { dailyLimitReached = true; return }
+        dailyLimitReached = false
         isTracking = true
         state = motion.isConnected ? .upright : .disconnected
         motion.start()
@@ -121,6 +127,12 @@ final class PostureEngine: ObservableObject {
         lastSampleAt = now
 
         today.trackedSeconds += dt
+        if !isUnlocked() && today.trackedSeconds >= ProStore.freeDailyTrackingSeconds {
+            // Yumuşak kilit: bugünlük bu kadar. Kullanıcı Pro alırsa hemen sürer.
+            dailyLimitReached = true
+            stopTracking()
+            return
+        }
         today.maxTiltDegrees = max(today.maxTiltDegrees, tilt)
         let loadKg = NeckLoad.kilograms(forTilt: tilt, headMassKg: settings.headMassKg)
         today.loadKgMinutes += loadKg * dt / 60

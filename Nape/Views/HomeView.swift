@@ -5,7 +5,9 @@ struct HomeView: View {
     @EnvironmentObject private var motion: HeadMotionService
     @EnvironmentObject private var engine: PostureEngine
     @EnvironmentObject private var settings: AppSettings
+    @EnvironmentObject private var store: ProStore
     @State private var showWelcome = false
+    @State private var showPaywall = false
     @State private var showCalibration = false
     @State private var showSettings = false
     /// Kullanıcı bilerek duraklattıysa uygulama açılışta kendiliğinden başlatmaz.
@@ -18,9 +20,11 @@ struct HomeView: View {
         NavigationStack {
             ScrollView {
                 VStack(spacing: NapeStyle.gap) {
+                    if !store.isPro { trialBanner }
                     hero
+                    if engine.dailyLimitReached && !store.isUnlocked { limitCard }
                     actions
-                    TodayChartView(today: engine.today, week: engine.recentDays(7))
+                    TodayChartView(today: engine.today, week: engine.recentDays(7), locked: !store.isUnlocked) { showPaywall = true }
                 }
                 .padding(.horizontal, 16)
                 .padding(.bottom, 16)
@@ -41,7 +45,16 @@ struct HomeView: View {
             }
             .sheet(isPresented: $showCalibration) { CalibrationView() }
             .sheet(isPresented: $showSettings) { SettingsView() }
+            .sheet(isPresented: $showPaywall) { PaywallView() }
+            .onChange(of: store.isPro) { _, pro in
+                // Satın alma sonrası sınır kalkar, takip kendiliğinden sürer
+                if pro && !engine.isTracking && !userPaused { engine.startTracking() }
+            }
             .onAppear {
+                engine.isUnlocked = { [weak store] in store?.isUnlocked ?? true }
+                #if targetEnvironment(simulator)
+                NSLog("HOME onAppear onboarding=%d calib=%.4f paused=%d tracking=%d unlocked=%d tracked=%.0f", settings.hasCompletedOnboarding, settings.calibrationOffset, userPaused, engine.isTracking, store.isUnlocked, engine.today.trackedSeconds)
+                #endif
                 // Sayfa sunumunu bir sonraki döngüye bırak: NavigationStack hazır olmadan sheet açmak sessizce başarısız olabiliyor.
                 if !settings.hasCompletedOnboarding { DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) { showWelcome = true } }
                 else if settings.calibrationOffset == 0 && !engine.isTracking { showCalibration = true }
@@ -49,12 +62,50 @@ struct HomeView: View {
                 else if !userPaused && !engine.isTracking && motion.isAvailable { engine.startTracking() }
                 #if targetEnvironment(simulator)
                 // Tasarım turu: `-simOpenSettings` ayarları açar, `-simScrollBottom` alt kısmı gösterir.
+                if CommandLine.arguments.contains("-simOpenPaywall") {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) { showPaywall = true }
+                }
                 if CommandLine.arguments.contains("-simOpenSettings") {
                     DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) { showSettings = true }
                 }
                 #endif
             }
         }
+    }
+
+    /// Deneme şeridi: kalan gün ya da bitti; dokununca Pro sayfası.
+    private var trialBanner: some View {
+        Button { showPaywall = true } label: {
+            HStack(spacing: 10) {
+                Image(systemName: store.isTrialActive ? "clock.badge" : "lock.fill")
+                    .foregroundStyle(store.isTrialActive ? Color.accentColor : Color.orange)
+                Text(store.isTrialActive ? "Trial: \(store.trialDaysLeft) days left" : "Trial ended · Free tier active")
+                    .font(.subheadline.weight(.medium))
+                Spacer()
+                Text("Nape Pro").font(.subheadline.weight(.semibold)).foregroundStyle(Color.accentColor)
+                Image(systemName: "chevron.right").font(.caption).foregroundStyle(.tertiary)
+            }
+            .padding(.horizontal, 14)
+            .padding(.vertical, 11)
+            .napeCard()
+        }
+        .buttonStyle(.plain)
+    }
+
+    /// Günlük ücretsiz sınır doldu.
+    private var limitCard: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Label("Today's free hour is used up", systemImage: "hourglass").font(.headline)
+            Text("Tracking resumes tomorrow, or right now with Nape Pro.").font(.subheadline).foregroundStyle(.secondary)
+            Button { showPaywall = true } label: {
+                Text("Unlock Nape Pro").font(.subheadline.weight(.semibold)).frame(maxWidth: .infinity).frame(height: 40)
+            }
+            .buttonStyle(.borderedProminent)
+            .buttonBorderShape(.capsule)
+        }
+        .padding(NapeStyle.cardPadding)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .napeCard()
     }
 
     // MARK: - Kahraman alan

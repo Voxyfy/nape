@@ -5,6 +5,8 @@ import Charts
 struct TodayChartView: View {
     let today: DailyStats
     let week: [DailyStats]   // eskiden yeniye, 7 gün
+    var locked: Bool = false
+    var onUnlock: () -> Void = {}
     @State private var showInfo = false
 
     private var currentHour: Int { Calendar.current.component(.hour, from: Date()) }
@@ -36,6 +38,8 @@ struct TodayChartView: View {
                 tile(icon: "bell.fill", tint: .purple, label: "Nudges", value: Double(today.alertCount), unit: nil, info: false)
             }
 
+            ZStack {
+            VStack(alignment: .leading, spacing: 12) {
             Chart {
                 ForEach(0..<24, id: \.self) { h in
                     BarMark(x: .value("Hour", h), y: .value("Minutes", today.hourlyTiltedSeconds[h] / 60), width: .fixed(8))
@@ -81,6 +85,20 @@ struct TodayChartView: View {
                 }
             }
             .frame(height: 46, alignment: .bottom)
+            }
+            .blur(radius: locked ? 6 : 0)
+            .allowsHitTesting(!locked)
+            if locked {
+                // Grafik ve geçmiş Pro; bulanık önizleme + tek düğme
+                Button(action: onUnlock) {
+                    Label("Charts and history with Nape Pro", systemImage: "lock.fill")
+                        .font(.subheadline.weight(.semibold))
+                        .padding(.horizontal, 16).padding(.vertical, 10)
+                        .background(Capsule().fill(.regularMaterial))
+                }
+                .buttonStyle(.plain)
+            }
+            }
         }
         .padding(NapeStyle.cardPadding)
         .napeCard()

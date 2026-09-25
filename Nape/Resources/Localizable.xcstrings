@@ -1151,6 +1151,266 @@
           }
         }
       }
+    },
+    "Nape Pro": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nape Pro"
+          }
+        }
+      }
+    },
+    "Your trial ends in %lld days. Keep everything with a one-time purchase.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Denemeniz %lld gün sonra bitiyor. Tek seferlik satın almayla her şey sizde kalsın."
+          }
+        }
+      }
+    },
+    "Your free trial has ended. Unlock everything with a one-time purchase.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ücretsiz denemeniz bitti. Tek seferlik satın almayla her şeyi açın."
+          }
+        }
+      }
+    },
+    "Unlimited tracking": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sınırsız takip"
+          }
+        }
+      }
+    },
+    "Free tier tracks one hour a day after the trial.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ücretsiz katman denemeden sonra günde bir saat takip eder."
+          }
+        }
+      }
+    },
+    "Five sounds, three intensities": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beş ses, üç şiddet"
+          }
+        }
+      }
+    },
+    "Chime to siren, gentle to relentless, escalating nudges.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Çandan sirene, nazikten acımasıza, kademeli uyarılar."
+          }
+        }
+      }
+    },
+    "Hourly chart and 7-day history": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saatlik grafik ve 7 günlük geçmiş"
+          }
+        }
+      }
+    },
+    "See when you slouch and whether you're improving.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ne zaman eğildiğinizi ve düzelip düzelmediğinizi görün."
+          }
+        }
+      }
+    },
+    "Personal load estimate": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kişisel yük tahmini"
+          }
+        }
+      }
+    },
+    "Tuned to your body weight.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vücut ağırlığınıza göre ayarlı."
+          }
+        }
+      }
+    },
+    "Wrist nudges, live status and a complication.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bilek uyarıları, canlı durum ve komplikasyon."
+          }
+        }
+      }
+    },
+    "Unlock for %@": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ ile aç"
+          }
+        }
+      }
+    },
+    "Loading price…": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fiyat yükleniyor…"
+          }
+        }
+      }
+    },
+    "Restore Purchases": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Satın Alımları Geri Yükle"
+          }
+        }
+      }
+    },
+    "Privacy": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gizlilik"
+          }
+        }
+      }
+    },
+    "Terms": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Koşullar"
+          }
+        }
+      }
+    },
+    "Not now": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Şimdi değil"
+          }
+        }
+      }
+    },
+    "Trial: %lld days left": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deneme: %lld gün kaldı"
+          }
+        }
+      }
+    },
+    "Trial ended · Free tier active": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deneme bitti · Ücretsiz katman"
+          }
+        }
+      }
+    },
+    "Trial ended": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deneme bitti"
+          }
+        }
+      }
+    },
+    "Today's free hour is used up": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bugünkü ücretsiz saat doldu"
+          }
+        }
+      }
+    },
+    "Tracking resumes tomorrow, or right now with Nape Pro.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Takip yarın sürer, Nape Pro ile hemen şimdi."
+          }
+        }
+      }
+    },
+    "Unlock Nape Pro": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nape Pro'yu aç"
+          }
+        }
+      }
+    },
+    "Charts and history with Nape Pro": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Grafik ve geçmiş Nape Pro ile"
+          }
+        }
+      }
+    },
+    "Unlock with Nape Pro": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nape Pro ile aç"
+          }
+        }
+      }
     }
   }
 }
