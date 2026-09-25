@@ -76,7 +76,7 @@ struct PaywallView: View {
         if let p = store.product { return String(localized: "Unlock for \(p.displayPrice)") }
         #if targetEnvironment(simulator)
         // simctl ile başlatınca StoreKit yapılandırması yüklenmez; ekran görüntüsü için sahte fiyat
-        if CommandLine.arguments.contains("-simFakePrice") { return String(localized: "Unlock for \("$4.99")") }
+        if CommandLine.arguments.contains("-simFakePrice") { return String(localized: "Unlock for \(Locale.current.identifier.hasPrefix("tr") ? "₺149,99" : "$4.99")") }
         #endif
         return String(localized: "Loading price…")
     }

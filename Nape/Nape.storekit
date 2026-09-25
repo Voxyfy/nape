@@ -1,21 +1,39 @@
 {
-  "identifier" : "NapeStore",
-  "nonRenewingSubscriptions" : [ ],
-  "products" : [
+  "identifier": "NapeStore",
+  "nonRenewingSubscriptions": [],
+  "products": [
     {
-      "displayPrice" : "4.99",
-      "familyShareable" : false,
-      "internalID" : "NAPEPRO0001",
-      "localizations" : [
-        { "description" : "Unlimited tracking, all sounds, history, Apple Watch.", "displayName" : "Nape Pro", "locale" : "en_US" },
-        { "description" : "Sınırsız takip, tüm sesler, geçmiş, Apple Watch.", "displayName" : "Nape Pro", "locale" : "tr" }
+      "displayPrice": "149.99",
+      "familyShareable": false,
+      "internalID": "NAPEPRO0001",
+      "localizations": [
+        {
+          "description": "Unlimited tracking, all sounds, history, Apple Watch.",
+          "displayName": "Nape Pro",
+          "locale": "en_US"
+        },
+        {
+          "description": "Sınırsız takip, tüm sesler, geçmiş, Apple Watch.",
+          "displayName": "Nape Pro",
+          "locale": "tr"
+        }
       ],
-      "productID" : "com.batuhanhaymana.nape.pro",
-      "referenceName" : "Nape Pro",
-      "type" : "NonConsumable"
+      "productID": "com.batuhanhaymana.nape.pro",
+      "referenceName": "Nape Pro",
+      "type": "NonConsumable"
     }
   ],
-  "settings" : { "_applicationInternalID" : "", "_developerTeamID" : "4U5QVH3U6A", "_lastSynced" : 0, "_locale" : "en_US", "_storefront" : "USA", "_storeKitErrors" : [ ] },
-  "subscriptionGroups" : [ ],
-  "version" : { "major" : 4, "minor" : 0 }
+  "settings": {
+    "_applicationInternalID": "",
+    "_developerTeamID": "4U5QVH3U6A",
+    "_lastSynced": 0,
+    "_locale": "tr_TR",
+    "_storefront": "TUR",
+    "_storeKitErrors": []
+  },
+  "subscriptionGroups": [],
+  "version": {
+    "major": 4,
+    "minor": 0
+  }
 }
